@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'zhubohupod_talmedia_ios'
+  s.name             = 'zhubohupod_talmedia_ios_dl'
   s.version          = '1.5.4.4973'
-  s.summary          = 'test zhubohupod_talmedia_ios.'
+  s.summary          = 'test zhubohupod_talmedia_ios_dl.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-long test zhubohupod_talmedia_ios.
+long test zhubohupod_talmedia_ios_dl.
                        DESC
 
   s.homepage         = 'https://github.com/zhubohu/zhubohupod_talmedia_ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Copyright', :text => 'Copyright zhubohu@163.com. All rights reserved.\n' }
   s.author           = { 'zhubohu' => 'zhubohu@163.com' }
-  s.source           = { :http => "https://github.com/zhubohu/zhubohupod_talmedia_ios/releases/download/v#{s.version}/TALRTCMedia.framework.zip"}
+  s.source           = { :http => "https://github.com/zhubohu/zhubohupod_talmedia_ios/releases/download/v#{s.version}/TALRTCMedia_DL.framework.zip"}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,7 +38,7 @@ long test zhubohupod_talmedia_ios.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'SystemConfiguration', 'OpenGLES', 'CoreMedia', 'AVFoundation', 'VideoToolbox', 'AudioToolbox'
-   s.libraries = 'iconv', 'c++', 'z'
+   s.frameworks = 'UIKit', 'CoreGraphics', 'QuartzCore', 'SystemComfiguration', 'VideoToolbox', 'AudioToolbox', 'AdSupport', 'CoreTelephony', 'Security'
+   s.libraries = 'sqlite3', 'z'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
